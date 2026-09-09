@@ -114,7 +114,7 @@ def load_models():
 
         try:
             location_model = joblib.load(
-                LOCATION_MODEL_PATH
+                "ManganAI/models/exploration_model.pkl"
             )
 
         except Exception:
@@ -125,7 +125,7 @@ def load_models():
 
         try:
             production_model = joblib.load(
-                PRODUCTION_MODEL_PATH
+                "ManganAI/models/production_model.pkl"
             )
 
         except Exception:
